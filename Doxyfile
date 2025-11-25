@@ -1,0 +1,8 @@
+PROJECT_NAME           = "Loan Calculator Project"
+INPUT                  = LoanCalculator.h LoanCalculator.cpp
+RECURSIVE              = NO
+GENERATE_HTML          = YES
+HTML_OUTPUT            = docs/html
+GENERATE_LATEX         = NO
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
