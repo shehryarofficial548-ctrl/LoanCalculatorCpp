@@ -9,9 +9,11 @@ using namespace std;
 static const double MAX_EXP = 1e6;   // Max limit to prevent overflow
 static const double EPS     = 1e-9;  // Small epsilon
 
-LoanCalculator::LoanCalculator()
+LoanCalculator::LoanCalculator(bool loadConfig)
 {
     reset();
+
+    if (!loadConfig) return;
 
     // -------- LOAD DEFAULTS FROM CONFIG.TXT --------
     ifstream file("config.txt");
